@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         * { 
+             padding: 0; 
+             font-family: Arial;
+        }
+        body{
+            padding-left: 35%;
+            padding-right: 35%;
+            font-size: 1.1em;
+            background-color: azure;
+        }
+        input{
+            border-radius: 4px;
+        }
+    </style>
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+ 
+    <br>
+
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <div>
+            <label for="">Nome</label>
+            <input name="nome" required="required" placeholder="Digite seu nome" type="text">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">E-mail</label>
+            <input name="e-mail" required="required" placeholder="Digite seu e-mail" type="email">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">Selecione sua cidade</label>
+            <select required="required" name="cidade">
+                <option selected="selected" value="">Selecione</option>
+                <option value="1">São Paulo</option>
+                <option value="2">Rio de Janeiro</option>
+                <option value="3">Belo Horizonte</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">Sua foto</label>
+            <input type="file" name="foto" required="required">
+        </div>
+        
+        <br>
+
+        <div>
+            <label>Selecione seu sexo:</label>
+            <label for="sexo1"><input type="radio" id="sexo1" value="m" name="sexo">Masculino</input></label>
+            <label for="sexo2"><input type="radio" id="sexo2" value="f" name="sexo">Feminino</input></label>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">Biografia</label><br>
+            <textarea name="biografia" required="required" placeholder="Digite sua biografia" cols="30" rows="5"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="">Senha</label>
+            <input name="senha" placeholder="Digite sua senha" required="required" type="password">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="noticias">
+                <input type="checkbox" name="newsletter" id="noticias">
+                Deseja receber e-mails promocionais e notícias?
+            </label>
+        </div>
+
+        <br>
+
+        <div>
+            <button name="enviar" value="1" type="submit">Enviar</button>
+        </div>
+
+    </form>
+</body>
+</html>
